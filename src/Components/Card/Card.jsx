@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Card.css";
 import Button from "../Button/Button";
+
+
 function Card({ food, onAdd, onRemove }) {
   const [count, setCount] = useState(0);
   const { title, Image, price, id } = food;
@@ -25,7 +27,7 @@ function Card({ food, onAdd, onRemove }) {
         <img src={Image} alt={title} />
       </div>
       <h4 className="card__title">
-        {title} . <span className="card__price">$ {price}</span>
+        {title} . <span className="card__price">р {price}</span>
       </h4>
 
       <div className="btn-container">

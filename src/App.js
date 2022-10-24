@@ -41,7 +41,7 @@ function App() {
   };
 
   const onCheckout = () => {
-    tele.MainButton.text = "Сделать заказ";
+    tele.MainButton.text = "Сделать заказ + /form";
     tele.MainButton.show();
   };
 
